@@ -539,6 +539,12 @@ require('lazy').setup({
             },
           },
         },
+        ts_ls = {
+          filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+          cmd = { 'typescript-language-server', '--stdio' },
+          root_dir = require('lspconfig').util.root_pattern('package.json', 'tsconfig.json', '.git'),
+          -- You can add additional settings here if needed.
+        },
       }
 
       -- Ensure the servers and tools above are installed
