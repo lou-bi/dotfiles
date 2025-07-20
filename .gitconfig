@@ -1,0 +1,20 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Loubi
+	email = louisbon@protonmail.com
+[core]
+	pager = delta
+    sshCommand = ssh -i ~/.ssh/key_perso -o IdentitiesOnly=yes
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+    side-by-side = true
+[merge]
+	conflictStyle = zdiff3
+[push]
+    autoSetupRemote = true
+
+[includeIf "gitdir:~/sfeir/"]
+    path = ~/.gitconfig-sfeir
