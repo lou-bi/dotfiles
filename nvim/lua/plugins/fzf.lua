@@ -41,6 +41,5 @@ return {
             end,
             desc = 'Open fzf helptags',
         },
-,
     },
 }
